@@ -1,0 +1,4 @@
+#Mon Sep 03 14:07:25 ART 2018
+base.0=/Users/biancasozzi/poc-images-ar/Temp/gradleOut/build/intermediates/transforms/dex/release/0
+path.0=classes.dex
+renamed.0=classes.dex

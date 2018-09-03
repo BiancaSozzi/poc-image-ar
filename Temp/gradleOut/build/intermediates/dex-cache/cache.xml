@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/biancasozzi/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/78bef57785cf55d596b8760c2f54fcc1/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.3"
+        sha1="d46bca2836cb936675a51f8d54e3402015d835cb">
+        <dex dex="/Users/biancasozzi/poc-images-ar/Temp/gradleOut/build/intermediates/transforms/preDex/release/2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/biancasozzi/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/78bef57785cf55d596b8760c2f54fcc1/jars/libs/Vuforia.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.3"
+        sha1="dc10c1b1e48196f12f0ebb5103ae4dc156ba9b2e">
+        <dex dex="/Users/biancasozzi/poc-images-ar/Temp/gradleOut/build/intermediates/transforms/preDex/release/4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/biancasozzi/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/78bef57785cf55d596b8760c2f54fcc1/jars/libs/VuforiaUnityPlayer.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.3"
+        sha1="31de12dfd4ff409d57dd52142cd5ebe1c1eee803">
+        <dex dex="/Users/biancasozzi/poc-images-ar/Temp/gradleOut/build/intermediates/transforms/preDex/release/3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/biancasozzi/poc-images-ar/Temp/gradleOut/libs/unity-classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.3"
+        sha1="d20747339cb26185f9d4ec2a6b3583d18097118d">
+        <dex dex="/Users/biancasozzi/poc-images-ar/Temp/gradleOut/build/intermediates/transforms/preDex/release/1.jar" />
+    </item>
+
+</items>
