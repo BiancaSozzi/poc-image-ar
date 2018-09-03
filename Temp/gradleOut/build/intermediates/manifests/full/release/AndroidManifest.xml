@@ -62,7 +62,6 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
 
             <meta-data
@@ -72,13 +71,13 @@
 
         <meta-data
             android:name="unity.build-id"
-            android:value="a5701c52-aab2-488e-ba73-f0cdbfae576f" />
+            android:value="9083f26a-a861-4dc1-8890-42c2bea479d5" />
         <meta-data
             android:name="unity.splash-mode"
             android:value="0" />
         <meta-data
             android:name="unity.splash-enable"
-            android:value="True" />
+            android:value="False" />
         <!-- Allow the application to make use of ARCore, if available -->
         <meta-data
             android:name="com.google.ar.core"
