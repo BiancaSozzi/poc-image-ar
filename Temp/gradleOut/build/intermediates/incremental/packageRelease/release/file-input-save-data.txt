@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Sep 03 16:09:08 ART 2018
+#Tue Sep 04 09:23:57 ART 2018
 60.set=ASSET
 52.set=NATIVE_RESOURCE
 53.base=/Users/biancasozzi/poc-images-ar/Temp/gradleOut/build/intermediates/assets/release

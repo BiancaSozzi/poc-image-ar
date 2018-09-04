@@ -5,22 +5,18 @@ using Vuforia;
 public class CustomVirtualButtonEventHandler : MonoBehaviour,
                                                IVirtualButtonEventHandler
 {
-    public GameObject panel;
+    public GameObject faker, vbutton;
     void Start()
     {
-
-        VirtualButtonBehaviour[] vbs = GetComponentsInChildren<VirtualButtonBehaviour>();
-        for (int i = 0; i < vbs.Length; ++i)
-        {
-            vbs[i].RegisterEventHandler(this);
-        }
-
+        vbutton.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
+        faker = GameObject.Find("faker");
+        faker.SetActive(false); 
     }
 
     public void OnButtonPressed(VirtualButtonBehaviour vb)
     {
         Debug.Log("ACTUVE!");
-        panel.SetActive(true);
+        faker.SetActive(true);
 
     }
 
@@ -34,7 +30,7 @@ public class CustomVirtualButtonEventHandler : MonoBehaviour,
         Debug.Log("bye!");
         yield return new WaitForSeconds(4);
 
-        panel.SetActive(false);
+        faker.SetActive(false);
 
     }
 }
