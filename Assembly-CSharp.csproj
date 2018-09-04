@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{57A8164C-4424-D6D7-1FF8-D9316EF59278}</ProjectGuid>
+    <ProjectGuid>{6D807E8B-3823-F707-CBB8-EA9144C87185}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,6 +61,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Champions\FemaleWarrior\Models\Particles\RayShot.cs" />
+    <Compile Include="Assets\Champions\FemaleWarrior\Scripts\AbilityClasses.cs" />
+    <Compile Include="Assets\Champions\FemaleWarrior\Scripts\ASCLBasicController.cs" />
+    <Compile Include="Assets\Champions\FemaleWarrior\Scripts\BasicHitCheck.cs" />
+    <Compile Include="Assets\Champions\FemaleWarrior\Scripts\CamTarget.cs" />
+    <Compile Include="Assets\Champions\FemaleWarrior\Scripts\CarCamera.cs" />
+    <Compile Include="Assets\Champions\FemaleWarrior\Scripts\CharacterControllerCollCheck.cs" />
+    <Compile Include="Assets\Champions\FemaleWarrior\Scripts\CharacterDemoController.cs" />
+    <Compile Include="Assets\Champions\FemaleWarrior\Scripts\CharacterPhysicsController.cs" />
+    <Compile Include="Assets\Champions\FemaleWarrior\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Champions\FemaleWarrior\Scripts\Hit.cs" />
+    <Compile Include="Assets\Champions\FemaleWarrior\Scripts\killParticle.cs" />
+    <Compile Include="Assets\Champions\FemaleWarrior\Scripts\Missile.cs" />
+    <Compile Include="Assets\Champions\FemaleWarrior\Scripts\MouseOrbit.cs" />
+    <Compile Include="Assets\Champions\FemaleWarrior\Scripts\RadialAngler.cs" />
+    <Compile Include="Assets\Champions\FemaleWarrior\Scripts\RootMotionOff.cs" />
+    <Compile Include="Assets\Champions\Mking\mScripts\MKdemoCtrl.cs" />
     <Compile Include="Assets\CustomVirtualButtonEventHandler.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
@@ -69,22 +86,25 @@
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
     <None Include="Assets\Vuforia\Shaders\OutlineOpaque.shader" />
     <None Include="Assets\StreamingAssets\Vuforia\image-for-poc.xml" />
+    <None Include="Assets\Champions\RockWarrior\readMe.txt" />
     <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
     <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />
+    <None Include="Assets\Champions\Mking\mLD3DShaders\LD3D_SpecularEmissive.shader" />
     <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
     <None Include="Assets\Vuforia\Shaders\DepthContour.shader" />
+    <None Include="Assets\Champions\Mking\mLD3DShaders\LD3D_Specular.shader" />
     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>/Users/biancasozzi/poc-images-ar/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>/Users/francob/Eventbrite/poc-image-ar/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/biancasozzi/poc-images-ar/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/francob/Eventbrite/poc-image-ar/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/biancasozzi/poc-images-ar/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/francob/Eventbrite/poc-image-ar/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/biancasozzi/poc-images-ar/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/francob/Eventbrite/poc-image-ar/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -285,10 +305,10 @@
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>/Users/biancasozzi/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>/Users/francob/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
-      <HintPath>/Users/biancasozzi/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+      <HintPath>/Users/francob/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
