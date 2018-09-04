@@ -7,7 +7,7 @@ public class ToggleButtonScript : MonoBehaviour {
 
     public Button toggleButton;
     public Text buttonText;
-    public GameObject panel;
+    public GameObject panel, champion;
     public string playerName;
 
     // Use this for initialization
@@ -15,6 +15,7 @@ public class ToggleButtonScript : MonoBehaviour {
         toggleButton.GetComponent<Button>();
         toggleButton.onClick.AddListener(TaskOnClick);
         panel.SetActive(false);
+        champion.SetActive(true);
         SetButtonText();
         
 	}
@@ -22,6 +23,7 @@ public class ToggleButtonScript : MonoBehaviour {
     void TaskOnClick(){
       
         panel.SetActive(!panel.activeSelf);
+        champion.SetActive(!champion.activeSelf);
         SetButtonText();
     }
 
