@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="Match_New" size="50.000000 33.279221" />
+    <ImageTarget name="TeamVillains" size="50.000000 46.084339" />
     <ImageTarget name="archie-target" size="50.000000 107.812500" />
     <ImageTarget name="doublelift-target" size="50.000000 101.923080" />
     <ImageTarget name="froggenTarget" size="50.000000 91.076118" />
