@@ -27,7 +27,7 @@ public class AnimationScript : DefaultTrackableEventHandler {
             .setEase(LeanTweenType.easeInOutElastic);
 
         StartCoroutine(HidePanel());
-       
+
     }
 
     public IEnumerator HidePanel()
@@ -46,4 +46,5 @@ public class AnimationScript : DefaultTrackableEventHandler {
 
 }
 
-       
+
+
