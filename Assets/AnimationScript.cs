@@ -39,7 +39,7 @@ public class AnimationScript : DefaultTrackableEventHandler {
             .setEase(LeanTweenType.easeOutSine);
 
         yield return new WaitForSeconds(3.5f);
-        SceneManager.LoadScene("poc-images-ar", LoadSceneMode.Single);
+        SceneManager.LoadScene("match-win", LoadSceneMode.Single);
 
     }
 

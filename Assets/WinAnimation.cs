@@ -27,31 +27,41 @@ public class WinAnimation : DefaultTrackableEventHandler {
     protected override void OnTrackingFound(){
 
         base.OnTrackingFound();
-        panel_cup.SetActive(false);
-        panel_teams.SetActive(true);
+        // panel_cup.SetActive(false);
+        // panel_teams.SetActive(true);
+
         window_team.anchoredPosition3D += new Vector3(0f, -animationDistance, 0f);
+		window_cup.anchoredPosition3D += new Vector3(0f, -animationDistance, 0f);
+
         LeanTween
             .moveY(this.window_team, this.window_team.anchoredPosition3D.y + this.animationDistance, 3f)
             .setEase(LeanTweenType.easeInOutElastic);
 
         StartCoroutine(HidePanel(this.window_team));
-        panel_teams.SetActive(false);
-        panel_cup.SetActive(true);
-
-        base.OnTrackingFound();
-        window_cup.anchoredPosition3D += new Vector3(0f, -animationDistance, 0f);
-        LeanTween
-            .moveY(this.window_cup, this.window_cup.anchoredPosition3D.y + this.animationDistance, 3f)
-            .setEase(LeanTweenType.easeInOutElastic);
-
-        StartCoroutine(HidePanel(this.window_cup));
-
     }
 
     public IEnumerator HidePanel(RectTransform window)
     {
 
         yield return new WaitForSeconds(10);
+
+        LeanTween
+            .moveY(window, window.anchoredPosition3D.y - this.animationDistance, 3f)
+            .setEase(LeanTweenType.easeOutSine);
+
+		yield return new WaitForSeconds(1);
+
+		LeanTween
+            .moveY(this.window_cup, this.window_cup.anchoredPosition3D.y + this.animationDistance, 3f)
+            .setEase(LeanTweenType.easeInOutElastic);
+
+        StartCoroutine(HideCupPanel(this.window_cup));
+    }
+
+    public IEnumerator HideCupPanel(RectTransform window)
+    {
+        yield return new WaitForSeconds(10);
+
         LeanTween
             .moveY(window, window.anchoredPosition3D.y - this.animationDistance, 3f)
             .setEase(LeanTweenType.easeOutSine);
@@ -60,7 +70,5 @@ public class WinAnimation : DefaultTrackableEventHandler {
         SceneManager.LoadScene("poc-images-ar", LoadSceneMode.Single);
 
     }
-
-
 }
 
