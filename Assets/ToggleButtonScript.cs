@@ -44,7 +44,7 @@ public class ToggleButtonScript : MonoBehaviour {
 
 		LeanTween
 			.moveY(this.window, this.window.anchoredPosition3D.y + this.animationDistance, 0.2f)
-			.setEase(LeanTweenType.easeInOutElastic);
+			.setEase(LeanTweenType.easeOutSine);
 
 
         champion.SetActive(!champion.activeSelf);
