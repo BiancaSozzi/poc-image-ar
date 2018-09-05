@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/match-presentation.unity
+    guid: b13728ee44b864701a3ef0e26e31f5f6
+  - enabled: 1
     path: Assets/Scenes/poc-images-ar.unity
     guid: 038f0168cd7b6471c9ff89074fc1fb64
   m_configObjects: {}

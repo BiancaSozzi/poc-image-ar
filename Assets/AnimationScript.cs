@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AnimationScript : DefaultTrackableEventHandler {
 
@@ -24,6 +25,22 @@ public class AnimationScript : DefaultTrackableEventHandler {
         LeanTween
             .moveY(this.window, this.window.anchoredPosition3D.y + this.animationDistance, 3f)
             .setEase(LeanTweenType.easeInOutElastic);
+
+        StartCoroutine(HidePanel());
+       
+    }
+
+    public IEnumerator HidePanel()
+    {
+
+        yield return new WaitForSeconds(10);
+        LeanTween
+            .moveY(this.window, this.window.anchoredPosition3D.y - this.animationDistance, 3f)
+            .setEase(LeanTweenType.easeOutSine);
+
+        yield return new WaitForSeconds(3.5f);
+        SceneManager.LoadScene("poc-images-ar", LoadSceneMode.Single);
+
     }
 
 
