@@ -10,26 +10,52 @@ public class ToggleButtonScript : MonoBehaviour {
     public GameObject panel, champion;
     public string playerName;
 
+	[Header("UI Animation")]
+	private RectTransform window;
+	private Vector3 originalPosition;
+	private float animationDistance;
+
+	void Awake()
+	{
+		animationDistance = Screen.height * 2f;
+		window = panel.GetComponent<RectTransform>();
+	}
+
+	private void OnEnable()
+	{
+		originalPosition = window.anchoredPosition3D;
+	}
+
     // Use this for initialization
 	void Start () {
         toggleButton.GetComponent<Button>();
         toggleButton.onClick.AddListener(TaskOnClick);
+
         panel.SetActive(false);
-        champion.SetActive(true);
+
         SetButtonText();
-        
 	}
-	
-    void TaskOnClick(){
-      
-        panel.SetActive(!panel.activeSelf);
+
+	void TaskOnClick()
+	{
+		window.anchoredPosition3D += new Vector3(0f, -animationDistance, 0f);
+
+		panel.SetActive(!panel.activeSelf);
+
+		LeanTween
+			.moveY(this.window, this.window.anchoredPosition3D.y + this.animationDistance, 0.2f)
+			.setEase(LeanTweenType.easeInOutElastic);
+
+
         champion.SetActive(!champion.activeSelf);
+
         SetButtonText();
     }
 
-    void SetButtonText(){
-
+    void SetButtonText()
+	{
         string status = "STATS";
+
         if (panel.activeSelf)
         {
             status = "CHAMP";
