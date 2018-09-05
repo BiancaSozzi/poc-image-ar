@@ -27,14 +27,13 @@ public class MKdemoCtrl : MonoBehaviour {
         ShoulderItem = GameObject.Find("low_shoulder");
         MKBarItem= GameObject.Find("MKing_Bar");
         MKanimator = gameObject.GetComponent<Animator>();
-        AnimDisplayed.text = animationList[currentAnim];
+        //AnimDisplayed.text = animationList[currentAnim];
     }
 	
 	// Update is called once per frame
 	void Update () {
-        
-        ChangeShoulderItemState();
-        ChangeMKBarItemState();
+        //ChangeShoulderItemState();
+        //ChangeMKBarItemState();
     }
 
 
