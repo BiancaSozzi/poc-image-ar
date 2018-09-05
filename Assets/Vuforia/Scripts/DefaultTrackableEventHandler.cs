@@ -82,6 +82,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
 
+
         // Enable rendering:
         foreach (var component in rendererComponents)
             component.enabled = true;
@@ -93,6 +94,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Enable canvas':
         foreach (var component in canvasComponents)
             component.enabled = true;
+
     }
 
 
