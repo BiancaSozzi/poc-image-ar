@@ -14,11 +14,14 @@ public class ToggleButtonScript : MonoBehaviour {
 	private RectTransform window;
 	private Vector3 originalPosition;
 	private float animationDistance;
+	private Vector3 champOriginalScale;
 
 	void Awake()
 	{
 		animationDistance = Screen.height * 2f;
 		window = panel.GetComponent<RectTransform>();
+
+		champOriginalScale = champion.transform.localScale;
 	}
 
 	private void OnEnable()
@@ -46,8 +49,13 @@ public class ToggleButtonScript : MonoBehaviour {
 			.moveY(this.window, this.window.anchoredPosition3D.y + this.animationDistance, 0.2f)
 			.setEase(LeanTweenType.easeOutSine);
 
-
-        champion.SetActive(!champion.activeSelf);
+		if (panel.activeSelf) {
+			LeanTween
+				.scale(champion.gameObject, Vector3.zero, 0.2f);
+		} else {
+			LeanTween
+				.scale(champion.gameObject, champOriginalScale, 0.2f);
+		}
 
         SetButtonText();
     }
